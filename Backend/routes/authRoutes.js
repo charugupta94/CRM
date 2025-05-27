@@ -5,10 +5,11 @@ const {
   getCustomers,
 } = require("../controllers/customerController");
 
-const { createOrder } = require("../controllers/orderController");
+const { createOrder, getOrder } = require("../controllers/orderController");
 
 router.post("/createCustomer", createCustomer);
-router.get("/get", getCustomers);
+router.get("/getCustomer", getCustomers);
 router.post("/createOrder", createOrder);
+router.post("/getOrder", getOrder);
 
 module.exports = router;
